@@ -4,7 +4,27 @@
   <title>JEE Master AI</title>
 </head>
 <body>
+
   <h1>JEE Master AI 🚀</h1>
-  <p>App is coming soon...</p>
+  <p>Ask your JEE doubts below 👇</p>
+
+  <input id="input" placeholder="Type your doubt..." />
+  <button onclick="askAI()">Ask AI</button>
+
+  <p id="output"></p>
+
+  <script>
+    function askAI() {
+      const q = document.getElementById("input").value;
+      const output = document.getElementById("output");
+
+      output.innerText = "Thinking... 🤖";
+
+      setTimeout(() => {
+        output.innerText = "Answer: " + q + " (AI response demo)";
+      }, 1000);
+    }
+  </script>
+
 </body>
 </html>
